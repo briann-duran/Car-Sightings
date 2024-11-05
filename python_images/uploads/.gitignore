@@ -1,0 +1,9 @@
+# Ignore everything
+*
+
+# But not these files...
+!test-containers-example/
+!.gitignore
+!README.md
+!./exam/python_images/uploads/
+!./exam/docker-compose.yml

@@ -1,0 +1,15 @@
+FROM node:22-bookworm
+
+WORKDIR /app
+
+# Copiar los archivos en el contenedor
+COPY . .
+
+RUN npm install
+
+EXPOSE 3000
+
+# variable de entorno (set MONGO_URI=mongodb://username:password@host:port/)
+ENV MONGO_URI=${MONGO_URI}
+
+CMD ["node", "index.js"]

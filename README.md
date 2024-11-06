@@ -1,4 +1,4 @@
-# Proyecto Car Sightings
+# Proyecto Car Sightings :whale2:
 
 Este proyecto consiste en una serie de servicios contenedorizados utilizando Docker, que incluyen Python, Java, Nginx, MongoDB, PostgreSQL y más. A continuación, encontrarás instrucciones para ejecutar el proyecto en tu entorno local utilizando Docker Compose y detalles sobre las imágenes de Docker que se han subido a Docker Hub.
 
@@ -159,3 +159,26 @@ volumes:
   db_data:
   mongo_data:
 `
+
+# Prueba la aplicación con el plugin Docker para Intellij IDEA
+
+Instala el siguiente plugin
+<img width="490" alt="image" src="https://github.com/user-attachments/assets/5c38a955-f464-4f5b-990e-c5a78d17de1f">
+
+Luego dirigete al archivo `docker-compose.yml` y ejecuta compose presionar el boton :fast_forward:
+
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/325aee3a-d164-4052-ab49-670e3f2a6a81">
+
+
+
+luego, verifica que los contenedores se han ejecutado correctamente como se muestra en la siguiente imagen:
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/f11a5ddd-6e43-42b9-a3f7-f95ff97553ec">
+
+
+y presiona el siguiente enlace (resaltado en rojo) para visualizar la aplicación:
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/4f7e1e98-1ed3-491e-89cc-fe10c2299322">
+
+
+<img width="935" alt="image" src="https://github.com/user-attachments/assets/2cfbc250-0a96-4cc7-9eab-945021d48bf1">
+
+

@@ -45,7 +45,7 @@ Una vez que Docker Compose termine de iniciar los contenedores, puedes acceder a
 - Nginx: `http://localhost:8081/seed`
 - Python (Images): `http://localhost:5000/health`
 - Java (Sightings): `http://localhost:8082/health`
-- Node (Cars): `http://localhost:3000/health`. Si MongoDB está vacío, puedes usar HTTP GET en /seed para llenarlo `mongodb://localhost:3000/seed`
+- Node (Cars): `http://localhost:3000/health`. Si MongoDB está vacío, puedes usar HTTP GET en /seed para llenarlo `http://localhost:3000/seed`
 - MongoDB: `mongodb://localhost:27017`
 - PostgreSQL: `postgres://localhost:5432`
 

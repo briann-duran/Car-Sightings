@@ -42,7 +42,7 @@ Con las imágenes locales construidas, inicia el proyecto usando Docker Compose 
 ### 4. Accede a los Servicios
 Una vez que Docker Compose termine de iniciar los contenedores, puedes acceder a los servicios en los siguientes puertos:
 
-- Nginx: `http://localhost:8081/seed`
+- Nginx: `http://localhost:8081`
 - Python (Images): `http://localhost:5000/health`
 - Java (Sightings): `http://localhost:8082/health`
 - Node (Cars): `http://localhost:3000/health`. Si MongoDB está vacío, puedes usar HTTP GET en /seed para llenarlo `http://localhost:3000/seed`

@@ -64,7 +64,7 @@ Imagen de Python para gestionar las imágenes subidas:
 
 ### 2. Java Sighting
 
-Imagen de la aplicación Java (Spring Boot) para manejar los avistamientos:
+Imagen de la aplicación Java (Spring Boot):
 
 `docker pull brianduran/java_sighting:v1`
 

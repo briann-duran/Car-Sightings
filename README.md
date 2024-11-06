@@ -29,6 +29,7 @@ Car-Sightings/
           ├── bootstrapxxxx.min.css
           ├── bootstrapxxxx.min.js
           ├── style.css
+  ...
 ```
 
 ### 2. Una vez tengas todo configurado, navega a la carpeta donde se encuentra el archivo docker-compose.yml y ejecuta:
@@ -38,9 +39,9 @@ Car-Sightings/
 ### 3. Este comando descargará las imágenes necesarias (si no están ya en tu máquina) y luego levantará los servicios definidos en el archivo. Los servicios estarán disponibles en los siguientes puertos:
 
 - Nginx: `http://localhost:8081`
-- Python (Images): `http://localhost:5000`
-- Java (Sightings): `http://localhost:8082`
-- Node (Cars): `http://localhost:3000`
+- Python (Images): `http://localhost:5000/health`
+- Java (Sightings): `http://localhost:8082/health`
+- Node (Cars): `http://localhost:3000/health` . Si MongoDB está vacío, puedes usar HTTP GET en /seed para llenarlo `http://localhost:3000/seed`
 - MongoDB: `mongodb://localhost:27017`
 - PostgreSQL: `postgres://localhost:5432`
 
@@ -89,7 +90,6 @@ Este es el contenido del archivo docker-compose.yml que define los servicios y s
 
 services:
 
-  # 1. Python_Images
   images:
     image: brianduran/python_images:v1
     ports:
@@ -99,7 +99,6 @@ services:
     volumes:
       - ./python_images/uploads:/app/uploads
 
-  # 2. Java_Sighting
   sightings:
     image: brianduran/java_sighting:v1
     ports:
@@ -111,7 +110,6 @@ services:
     depends_on:
       - db
 
-  # 3. Postgres
   db:
     image: postgres:14.1-alpine
     environment:
@@ -123,7 +121,6 @@ services:
     volumes:
       - db_data:/var/lib/postgresql/data
 
-  # 4. Node_Cars
   cars:
     image: brianduran/node_cars:v1
     ports:
@@ -133,7 +130,6 @@ services:
     depends_on:
       - mongo
 
-  # 5. Mongo
   mongo:
     image: mongo:latest
     ports:
@@ -141,7 +137,6 @@ services:
     volumes:
       - mongo_data:/data/db
 
-  # 6. Nginx
   nginx:
     image: brianduran/nginx:v2
     ports:
@@ -154,7 +149,6 @@ services:
       - sightings
       - cars
 
-# Se persistirán los datos de Posgres y Mongo
 volumes:
   db_data:
   mongo_data:

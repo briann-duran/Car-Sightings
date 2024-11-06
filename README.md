@@ -1,4 +1,4 @@
-# Proyecto Car Sightings - Guía de Pruebas con Imágenes Locales
+# Proyecto Car Sightings - Guía de Pruebas con Imágenes Locales :whale2:
 
 Este proyecto consiste en una serie de servicios contenedorizados utilizando Docker, que incluyen Python, Java, Node.js, Nginx, MongoDB y PostgreSQL. A continuación, se detallan los pasos para ejecutar y probar el proyecto en tu entorno local usando imágenes locales para los servicios principales.
 
@@ -64,6 +64,14 @@ Para ajustes adicionales, puedes modificar las configuraciones en el archivo doc
 Instala el siguiente plugin
 <img width="490" alt="image" src="https://github.com/user-attachments/assets/5c38a955-f464-4f5b-990e-c5a78d17de1f">
 
-Luego dirigete al archivo `docker-compose.yml` y ejecuta compose presionar el boton `:fast_forward:`
+Luego dirigete al archivo `docker-compose.yml` y ejecuta compose presionar el boton :fast_forward:
 
 <img width="959" alt="image" src="https://github.com/user-attachments/assets/6d37ee0a-6414-46c6-9397-824ea83084de">
+
+luego, verifica que los contenedores se han ejecutado correctamente como se muestra en la siguiente imagen:
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/7a094918-bfb2-4fd8-9f97-536cfc99559a">
+
+y presiona el siguiente enlace (resaltado en rojo) para visualizar la aplicación:
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/525713a3-dcea-4dc1-b3fc-e0220a99db71">
+
+<img width="938" alt="image" src="https://github.com/user-attachments/assets/81ebc83a-ebe4-4df2-a63c-897065dfa7fa">

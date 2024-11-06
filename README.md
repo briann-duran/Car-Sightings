@@ -42,10 +42,10 @@ Con las imágenes locales construidas, inicia el proyecto usando Docker Compose 
 ### 4. Accede a los Servicios
 Una vez que Docker Compose termine de iniciar los contenedores, puedes acceder a los servicios en los siguientes puertos:
 
-- Nginx: `http://localhost:8081`
-- Python (Images): `http://localhost:5000`
-- Java (Sightings): `http://localhost:8082`
-- Node (Cars): `http://localhost:3000`
+- Nginx: `http://localhost:8081/seed`
+- Python (Images): `http://localhost:5000/health`
+- Java (Sightings): `http://localhost:8082/health`
+- Node (Cars): `http://localhost:3000/health`. Si MongoDB está vacío, puedes usar HTTP GET en /seed para llenarlo `mongodb://localhost:3000/seed`
 - MongoDB: `mongodb://localhost:27017`
 - PostgreSQL: `postgres://localhost:5432`
 
@@ -54,7 +54,7 @@ Para detener y eliminar todos los contenedores en ejecución, ejecuta el siguien
 
 `docker-compose down`
 
-##Notas Adicionales
+## Notas Adicionales
 Este proyecto utiliza volúmenes para la persistencia de datos de MongoDB y PostgreSQL, lo que permite que los datos almacenados persistan aunque los contenedores sean detenidos o eliminados.
 
 Para ajustes adicionales, puedes modificar las configuraciones en el archivo docker-compose.yml o actualizar los servicios individualmente en sus respectivos subdirectorios.

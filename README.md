@@ -86,7 +86,8 @@ Puedes visitar mi perfil en Docker Hub `https://hub.docker.com/u/brianduran` par
 
 Este es el contenido del archivo docker-compose.yml que define los servicios y su configuración:
 
-`version: "3.8"
+```bash
+version: "3.8"
 
 services:
 
@@ -152,7 +153,7 @@ services:
 volumes:
   db_data:
   mongo_data:
-`
+```
 
 # Prueba la aplicación con el plugin Docker para Intellij IDEA
 

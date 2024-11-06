@@ -37,12 +37,12 @@ Car-Sightings/
 
 ### 3. Este comando descargará las imágenes necesarias (si no están ya en tu máquina) y luego levantará los servicios definidos en el archivo. Los servicios estarán disponibles en los siguientes puertos:
 
-Nginx: `http://localhost:8081`
-Python (Images): `http://localhost:5000`
-Java (Sightings): `http://localhost:8082`
-Node (Cars): `http://localhost:3000`
-MongoDB: `mongodb://localhost:27017`
-PostgreSQL: `postgres://localhost:5432`
+- Nginx: `http://localhost:8081`
+- Python (Images): `http://localhost:5000`
+- Java (Sightings): `http://localhost:8082`
+- Node (Cars): `http://localhost:3000`
+- MongoDB: `mongodb://localhost:27017`
+- PostgreSQL: `postgres://localhost:5432`
 
 ### 4. Detener los servicios
 
@@ -79,7 +79,7 @@ Imagen del servidor Nginx para servir la aplicación web:
 
 `docker pull brianduran/nginx:v2`
 
-Puedes visitar mi perfil en Docker Hub para obtener más detalles sobre las imágenes disponibles.
+Puedes visitar mi perfil en Docker Hub `https://hub.docker.com/u/brianduran` para obtener más detalles sobre las imágenes disponibles.
 
 #### Estructura del archivo `docker-compose.yml`
 

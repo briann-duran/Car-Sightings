@@ -29,6 +29,7 @@ Car-Sightings/
           ├── bootstrapxxxx.min.css
           ├── bootstrapxxxx.min.js
           ├── style.css
+```
 
 ### 2. Una vez tengas todo configurado, navega a la carpeta donde se encuentra el archivo docker-compose.yml y ejecuta:
 

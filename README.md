@@ -58,3 +58,12 @@ Para detener y eliminar todos los contenedores en ejecución, ejecuta el siguien
 Este proyecto utiliza volúmenes para la persistencia de datos de MongoDB y PostgreSQL, lo que permite que los datos almacenados persistan aunque los contenedores sean detenidos o eliminados.
 
 Para ajustes adicionales, puedes modificar las configuraciones en el archivo docker-compose.yml o actualizar los servicios individualmente en sus respectivos subdirectorios.
+
+# Prueba la aplicación con el plugin Docker para Intellij IDEA
+
+Instala el siguiente plugin
+<img width="490" alt="image" src="https://github.com/user-attachments/assets/5c38a955-f464-4f5b-990e-c5a78d17de1f">
+
+Luego dirigete al archivo `docker-compose.yml` y ejecuta compose presionar el boton `:fast_forward:`
+
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/6d37ee0a-6414-46c6-9397-824ea83084de">
